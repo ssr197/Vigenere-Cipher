@@ -1,0 +1,137 @@
+<!--
+Simple Vigenere Cipher - A simple tool that encrypts text
+using manually decryptable polyalphabetic substitution
+(Vigenere cipher).
+Copyright (C) 2018 Guney Ozsan
+
+
+This file is part of Simple Vigenere Cipher.
+
+
+Simple Vigenere Cipher is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+any later version.
+
+
+Simple Vigenere Cipher is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Simple Vigenere Cipher.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vigenere Cipher - Encryption Decryption</title>
+    <link rel='stylesheet prefetch' href='css/bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+body {
+    background-image: url("Bitbank-Adds-New-Cryptocurrency-To-Their-Platform.jpg");
+}
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1 col-md-2 col-xl-3">
+            </div>
+            <div class="box col-12 col-sm-10 col-md-8 col-xl-6" id="box-main-title">
+                <div class="text-biggest-title text-center col" id="text-main-title">
+                    VIGENERE CIPHER
+                </div>
+                <div class="text-bigger-title text-center col" id="text-main-title">
+                    ENCRYPTION / DECRYPTION
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1 col-md-2 col-xl-3">
+            </div>
+            <div class="box col-12 col-sm-10 col-md-8 col-xl-6" id="box-choose-operation">
+                <div class="row">
+                    <div class="text-prompt text-center col" id="text-choose-operation">
+                        Choose operation:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box box-encrypt-active box-crypt col" id="box-select-encrypt">
+                        <div class="col">
+                            <button class="btn btn-danger btn-block btn-select-crypt" id="btn-select-encrypt">
+                                ENCRYPTION
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box box-decrypt-active box-crypt col" id="box-select-decrypt">
+                        <div class="col">
+                            <button class="btn btn-info btn-block btn-select-crypt" id="btn-select-decrypt">
+                                DECRYPTION
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1 col-md-2 col-xl-3">
+            </div>
+            <div class="box box-disabled col-12 col-sm-10 col-md-8 col-xl-6" id="box-input-text">
+                <div class="form-group">
+                    <label class="text-prompt" id="text-input-text" for="wallet-key">Input:</label>
+                    <sublabel></br><i>case SENSITIVE - letters or numbers</i></sublabel>
+                    <input type="text" class="form-control user-input" id="input-text" disabled>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1 col-md-2 col-xl-3">
+            </div>
+            <div class="box box-disabled col-12 col-sm-10 col-md-8 col-xl-6" id="box-input-encryption-key">
+                <div class="form-group">
+                    <label class="text-prompt" id="text-input-encryption-key" for="encryption-key">Encryption key:</label>
+                    <sublabel></br><i>case does NOT matter - letters or numbers</i></sublabel>
+                    <input type="text" class="form-control user-input" id="input-encryption-key" disabled>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1 col-md-2 col-xl-3">
+            </div>
+            <div class="box box-disabled col-12 col-sm-10 col-md-8 col-xl-6" id="box-output">
+                <div class="form-group">
+                    <label class="text-prompt" id="text-output-title">
+                        Output:
+                    </label>
+                    <sublabel></br><i>case SAME AS INPUT</i></sublabel>
+                    <textarea type="text" class="form-control" hidden readonly disabled></textarea>
+                    <div class="row">
+                        <div class="box col box-output" id="text-output">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box col text-center" id="box-encryption-details">
+                <div class="col text-title" id="text-encryption-details-title">
+                    METHODOLOGY
+                </div>
+                <div>
+                    <pre id="text-encryption-details" class="text-center">
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='js/jquery-3.2.1.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/vigenere.js"></script>
+</body>
+</html>

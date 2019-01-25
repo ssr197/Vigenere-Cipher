@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vigenere Cipher - Encryption Decryption</title>
+    <link rel='stylesheet prefetch' href='css/bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+body {
+    background-image: url("Bitbank-Adds-New-Cryptocurrency-To-Their-Platform.jpg");
+}
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col-sm-1 col-md-2 col-xl-3">
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="row">
+            <div class="col-sm-1 col-md-2 col-xl-3">
+            </div>
+            <div class="box col-12 col-sm-10 col-md-8 col-xl-6 text-center">
+                <div class="text-title">
+                    VIGENERE CIPHER
+                </div>                
+                <div class="content text-left">
+                        <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher" target="_blank">Vigenère cipher</a>
+                        is a polyalphabetic substitution encrypting method
+                        that is also convenient to encrypt and decrypt manually. This means
+                        even if one loses access to the tools used during encryption,
+                        it is still possible to decrypt the content using
+                        good old pen and paper, or by writing a simple program using
+                        any computer language.
+                </div>
+                <div class="text-title">
+                    RULES
+                </div>
+                <div class="rules text-left">
+                    • Whitespace is omitted.<br>
+                    • Letter-in, letter-out.<br>
+                    • Number-in, number-out.<br>
+                    • Output case is the same as input case.<br>
+                    • Non-English or special characters in input are same in output.<br>
+                    • Non-English or special characters in password functions as "a" or "0 (zero)".<br>
+                </div>
+                <div class="text-title">
+                    CHARACTER SET
+                </div>
+                <div class="vigenere-character-set">
+                    <pre class="vigenere-table">abcdefghijklmnopqrstuvwxyz</pre>
+                    <pre class="vigenere-table">ABCDEFGHIJKLMNOPQRSTUVWXYZ</pre>
+                    <pre class="vigenere-table">0123456789</pre>
+                </div>
+                <div class="text-title">
+                    VIGENERE TABLES
+                </div>
+                <div class="vigenere-table">
+                    <pre class="vigenere-table"><span class="vigenere-table-title">  ABCDEFGHIJKLMNOPQRSTUVWXYZ</span></pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">A </span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">B </span>BCDEFGHIJKLMNOPQRSTUVWXYZA</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">C </span>CDEFGHIJKLMNOPQRSTUVWXYZAB</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">D </span>DEFGHIJKLMNOPQRSTUVWXYZABC</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">E </span>EFGHIJKLMNOPQRSTUVWXYZABCD</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">F </span>FGHIJKLMNOPQRSTUVWXYZABCDE</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">G </span>GHIJKLMNOPQRSTUVWXYZABCDEF</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">H </span>HIJKLMNOPQRSTUVWXYZABCDEFG</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">I </span>IJKLMNOPQRSTUVWXYZABCDEFGH</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">J </span>JKLMNOPQRSTUVWXYZABCDEFGHI</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">K </span>KLMNOPQRSTUVWXYZABCDEFGHIJ</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">L </span>LMNOPQRSTUVWXYZABCDEFGHIJK</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">M </span>MNOPQRSTUVWXYZABCDEFGHIJKL</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">N </span>NOPQRSTUVWXYZABCDEFGHIJKLM</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">O </span>OPQRSTUVWXYZABCDEFGHIJKLMN</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">P </span>PQRSTUVWXYZABCDEFGHIJKLMNO</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">Q </span>QRSTUVWXYZABCDEFGHIJKLMNOP</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">R </span>RSTUVWXYZABCDEFGHIJKLMNOPQ</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">S </span>STUVWXYZABCDEFGHIJKLMNOPQR</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">T </span>TUVWXYZABCDEFGHIJKLMNOPQRS</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">U </span>UVWXYZABCDEFGHIJKLMNOPQRST</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">V </span>VWXYZABCDEFGHIJKLMNOPQRSTU</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">W </span>WXYZABCDEFGHIJKLMNOPQRSTUV</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">X </span>XYZABCDEFGHIJKLMNOPQRSTUVW</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">Y </span>YZABCDEFGHIJKLMNOPQRSTUVWX</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">Z </span>ZABCDEFGHIJKLMNOPQRSTUVWXY</pre>
+                </div>
+                <div class="vigenere-table">
+                    <pre class="vigenere-table"><span class="vigenere-table-title">  0123456789</span></pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">0 </span>0123456789</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">1 </span>1234567890</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">2 </span>2345678901</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">3 </span>3456789012</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">4 </span>4567890123</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">5 </span>5678901234</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">6 </span>6789012345</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">7 </span>7890123456</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">8 </span>8901234567</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">9 </span>9012345678</pre>
+                </div>
+                <div class="vigenere-table">
+                    <pre class="vigenere-table"><span class="vigenere-table-title">  ABCDEFGHIJKLMNOPQRSTUVWXYZ</span></pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">0 </span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">1 </span>BCDEFGHIJKLMNOPQRSTUVWXYZA</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">2 </span>CDEFGHIJKLMNOPQRSTUVWXYZAB</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">3 </span>DEFGHIJKLMNOPQRSTUVWXYZABC</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">4 </span>EFGHIJKLMNOPQRSTUVWXYZABCD</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">5 </span>FGHIJKLMNOPQRSTUVWXYZABCDE</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">6 </span>GHIJKLMNOPQRSTUVWXYZABCDEF</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">7 </span>HIJKLMNOPQRSTUVWXYZABCDEFG</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">8 </span>IJKLMNOPQRSTUVWXYZABCDEFGH</pre>
+                    <pre class="vigenere-table"><span class="vigenere-table-title">9 </span>JKLMNOPQRSTUVWXYZABCDEFGHI</pre>
+                </div>
+            </div>
+        </div>
+    <script src='js/jquery-3.2.1.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/vigenere.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/*
+Simple Vigenere Cipher - A simple tool that encrypts text
+using manually decryptable polyalphabetic substitution
+(Vigenere cipher).
+Copyright (C) 2018 Guney Ozsan
+
+This file is part of Simple Vigenere Cipher.
+
+Simple Vigenere Cipher is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+any later version.
+
+Simple Vigenere Cipher is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Simple Vigenere Cipher.  If not, see <http://www.gnu.org/licenses/>.
+---------------------------------------------------------------------
+*/
+
+@media (max-width: 768px) {
+  .col-xs-12.text-left {
+    text-align: right!important;
+  } 
+}
+
+pre.vigenere-table {
+  margin: 0px;
+}
+
+div.vigenere-table {
+  margin-bottom: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 120%;
+  text-align: center;
+}
+
+div.text-title {
+  margin: 10px 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+div.text-bigger-title {
+  margin-bottom: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+div.vigenere-character-set {
+  margin-bottom: 20px;
+}
+
+#box-encryption-details,
+#text-encryption-details {
+  background-color: black;
+  color: lightgreen;
+}
+
+.text-biggest-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 160%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.sub-title {
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin: 5px;
+  padding: 3%;
+}
+
+.box {
+  background-color: white;
+  border-radius:3px;
+  margin: 5px;
+}
+
+.box-encrypt-passive {
+  background-color: rgb(209, 154, 163);
+}
+
+.box-decrypt-passive {
+  background-color: lightblue;
+}
+
+.box-encrypt-active {
+  background-color: pink;
+}
+
+.box-decrypt-active {
+  background-color: lightcyan;
+}
+
+.box-disabled {
+  background-color: white;
+}
+
+.box-output {
+  background-color: black;
+  color: lightgreen;
+  padding: 6px 12px 6px 12px;
+  margin: 12px 18px 12px 18px;
+  font-weight: bold;
+}
+
+.content {
+  margin: 12px;
+}
+
+.credits {
+  font-family: 'Questrial', sans-serif;
+  font-size: 90%;
+}
+
+.form-control[readonly] {
+  background-color: black !important;
+  color: lightgreen;
+  font-weight: bold;
+}
+
+.number {
+  color: white;
+  font-weight: bold;
+}
+
+.vigenere-table-title {
+  font-weight: bold;
+}
+
+.text-prompt {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 120%;
+  margin-top: 10px;
+}
+
+.warning {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 120%;
+  color: rgb(197, 116, 116);
+}
+
+.arrow {
+  color: lightslategray;
+}
+
+.rules {
+  margin-bottom: 12px;
+}
